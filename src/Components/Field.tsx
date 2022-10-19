@@ -1,4 +1,5 @@
 import React from 'react';
+import { Input } from './Inputs';
 
 type FieldProps = {
     text: string, 
@@ -18,22 +19,8 @@ export const Field = ({text, type} : FieldProps) : JSX.Element => {
   return (
     <div>
       <label>{text}</label>
-      {
-        isEditing ? (
-        <div>
-          <input onChange={handleOnChange} type={type}></input> 
-          <button onClick={() => setIsEditing(false)}>✅</button>
-          <button onClick={() => {setVal(currentVal); setIsEditing(false)}}>Отменить</button>
-        </div>
-        ) :
-        (
-        <div>
-          <label>{val}</label>
-          <button onClick={() => {setIsEditing(true); setCurrentVal(val)}}>✏️</button>
-          
-        </div>
-        )
-      }
+      <Input isEditing={isEditing} val={val} handleOnChange={handleOnChange} type={type} setIsEditing={setIsEditing} setVal={setVal}
+      setCurrentVal={setCurrentVal} currentVal={currentVal}/>
     </div>
   );
 }
