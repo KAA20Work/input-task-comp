@@ -19,10 +19,13 @@ export const Input = ({type, isEditing, val, handleOnChange, setIsEditing, setVa
           {
             isEditing ? (
             <div>
-              <input onChange={handleOnChange} type={type}></input> 
-              <button onClick={() => setIsEditing(false)}>✅</button>
+              <div>
+                <input onChange={handleOnChange} type={type}></input> 
+                <button onClick={() => setIsEditing(false)}>✅</button>
+              </div>
               <button onClick={() => {setVal(currentVal); setIsEditing(false)}}>Отменить</button>
             </div>
+            
             ) :
             (
             <div>

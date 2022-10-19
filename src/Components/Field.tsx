@@ -18,7 +18,7 @@ export const Field = ({text, type} : FieldProps) : JSX.Element => {
 
   return (
     <div>
-      <label>{text}</label>
+      <label className='title'>{text}</label>
       <Input isEditing={isEditing} val={val} handleOnChange={handleOnChange} type={type} setIsEditing={setIsEditing} setVal={setVal}
       setCurrentVal={setCurrentVal} currentVal={currentVal}/>
     </div>

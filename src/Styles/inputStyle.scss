@@ -1,0 +1,30 @@
+div.centered {
+    width:300px;
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-100px 0 0 -150px;
+    border-width: 50px;
+}
+
+div.form {
+    border:1px solid black;
+    border-radius: 35px;
+    text-align: center;
+    background: linear-gradient(orange, pink);
+}
+
+input {
+    background-color:whitesmoke;
+    border-radius: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    border-radius: 35px;
+}
+
+label.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
